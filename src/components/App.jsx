@@ -1,3 +1,6 @@
+import {Profile} from './Profile';
+import user_data from '../utils/mock/user_data.json';
+
 export const App = () => {
   return (
     <div
@@ -10,7 +13,7 @@ export const App = () => {
         color: '#010101'
       }}
     >
-      React homework template
+      <Profile {...user_data}/>
     </div>
   );
 };
