@@ -1,9 +1,15 @@
-// title - nie jest obowiązkowy i jeśli nie został przekazany, widok nagłówka nie powinien się renderować <h2>.
-// stats - tablica obiektów zawierających informacje o elemencie statystyki. Może mieć dowolną ilość elementów.
-// Kolor tła elementu statystyki można pominąć albo stworzyć funkcję do generowania losowego koloru.
+import propTypes from 'prop-types';
 
-<section class="statistics">
-  <h2 class="title">Upload stats</h2>
+export const Statistics = ({el, title = 'UPLOAD STATS'}) => {
+  return (
+    <section className='statistics'>
+      <h2 className='title'>{title}</h2>
+
+    </section>
+  )
+}
+
+
 
   <ul class="stat-list">
     <li class="item">
@@ -23,4 +29,3 @@
       <span class="percentage">12%</span>
     </li>
   </ul>
-</section>

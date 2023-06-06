@@ -1,5 +1,5 @@
 import {Profile} from './Profile';
-import user_data from '../utils/mock/user_data.json';
+import user_data from '../utils/mock/user.json';
 
 export const App = () => {
   return (
@@ -9,7 +9,7 @@ export const App = () => {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        fontSize: 40,
+        fontSize: 16,
         color: '#010101'
       }}
     >
