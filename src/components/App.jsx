@@ -1,5 +1,8 @@
 import {Profile} from './Profile';
 import user_data from '../utils/mock/user.json';
+import { Statistics } from './Statistics';
+import data from '../utils/mock/data.json';
+
 
 export const App = () => {
   return (
@@ -14,6 +17,7 @@ export const App = () => {
       }}
     >
       <Profile {...user_data}/>
+      <Statistics el={data}/>
     </div>
   );
 };
