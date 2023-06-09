@@ -1,13 +1,21 @@
-// avatar;
-// name;
-// isOnline; - zmiana tła span.status
+import propTypes from 'prop-types';
 
-<ul class="friend-list">
-  <!-- Dowolna ilość FriendListItem -->
-</ul>
+export const FriendList = ({el}) => {
+  return (
+      <ul className="friend-list">
+        {el.map(({avatar, name, isOnline, id}) => {
+          return (
+            <li className="item2" key={id}>
+            <span className={isOnline ? 'status-online' : 'status-offline'}>O</span>
+            <img className="avatar2" src={avatar} alt={name} width="48" />
+            <p className="name2">{name}</p>
+            </li>
+          )
+        })}
+      </ul>
+  )
+}
 
-<li class="item">
-  <span class="status"></span>
-  <img class="avatar" src="" alt="User avatar" width="48" />
-  <p class="name"></p>
-</li>
+FriendList.propTypes = {
+  el: propTypes.array.isRequired,
+};
