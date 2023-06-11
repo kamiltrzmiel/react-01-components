@@ -1,5 +1,6 @@
 .statistics {
     background-color: #ffffff;
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.25);
     width: 600px;
     border-radius: 10px;
     margin-top: 30px;
@@ -20,7 +21,7 @@
     gap: 8px;
 }
 
-.item {
+.item-stat {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -30,23 +31,23 @@
 
 }
 
-.item:first-child {
+.item-stat:first-child {
     background-color: lightblue;
 }
 
-.item:nth-child(2) {
+.item-stat:nth-child(2) {
     background-color: lightcoral;
 }
 
-.item:nth-child(3) {
+.item-stat:nth-child(3) {
     background-color: lightsalmon;
 }
 
-.item:nth-child(4) {
+.item-stat:nth-child(4) {
     background-color: lightyellow;
 }
 
-.item:last-child {
+.item-stat:last-child {
     background-color: lightseagreen;
 }
 

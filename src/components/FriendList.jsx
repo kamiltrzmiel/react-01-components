@@ -5,10 +5,10 @@ export const FriendList = ({el}) => {
       <ul className="friend-list">
         {el.map(({avatar, name, isOnline, id}) => {
           return (
-            <li className="item2" key={id}>
-            <span className={isOnline ? 'status-online' : 'status-offline'}>O</span>
-            <img className="avatar2" src={avatar} alt={name} width="48" />
-            <p className="name2">{name}</p>
+            <li className="item-friend" key={id}>
+            <span className={isOnline ? 'status-online' : 'status-offline'}></span>
+            <img className="avatar-friend" src={avatar} alt={name} width="48" />
+            <p className="name-friend">{name}</p>
             </li>
           )
         })}
