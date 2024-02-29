@@ -1,1 +1,1 @@
-# [Visit site REACT-HW-01](https://kamiltrzmiel.github.io/goit-react-hw-01-components/)
+# [Visit site](https://kamiltrzmiel.github.io/react-01-components/)
